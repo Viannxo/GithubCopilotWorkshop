@@ -2,13 +2,41 @@
 
 # Soc Ops
 
-Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+A playful social bingo app for in-person mixers, team warmups, and hands-on workshops.
 
-📚 **[View Lab Guide](workshop/GUIDE.md)**
+Meet people, spark small conversations, and race to complete a bingo line with fresh, fun prompts.
+
+📚 **[Open the workshop guide](workshop/GUIDE.md)**
 
 ---
 
-## 📚 Lab Guide
+## Why this project?
+
+- Lightweight Spring Boot + Thymeleaf experience with no extra frontend framework.
+- Built as a learning lab for UI design, Java service wiring, and multi-agent collaboration.
+- Perfect for workshops, icebreakers, and developer practice.
+
+---
+
+## Quick start
+
+### Run locally
+```bash
+cd socops
+./mvnw spring-boot:run
+```
+Open the app at `http://127.0.0.1:8080`.
+
+### Build and test
+```bash
+cd socops
+./mvnw clean package
+./mvnw test
+```
+
+---
+
+## Workshop path
 
 | Part | Title |
 |------|-------|
@@ -18,34 +46,23 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 | [**03**](workshop/03-quiz-master.md) | Custom Quiz Master |
 | [**04**](workshop/04-multi-agent.md) | Multi-Agent Development |
 
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
+> 📝 You can also browse the full workshop content in the [`workshop/`](workshop/) folder.
+
+---
+
+## Project structure
+
+- `socops/` — Spring Boot app and UI templates
+- `workshop/` — guided lab content and exercises
+- `.github/agents/` — custom agent definitions for task automation
 
 ---
 
 ## Prerequisites
 
-- [Java 21 JDK](https://adoptium.net/) or higher
-- [Apache Maven 3.9+](https://maven.apache.org/) (or use the included Maven Wrapper)
+- Java 21 JDK or higher
+- Apache Maven 3.9+ (or use the included Maven Wrapper)
 
-## Run
-
-```bash
-cd socops
-./mvnw spring-boot:run
-```
-
-## Build
-
-```bash
-cd socops
-./mvnw clean package
-```
-
-## Test
-
-```bash
-cd socops
-./mvnw test
-```
+---
 
 Deploys automatically to GitHub Pages on push to `main`.
